@@ -1,6 +1,6 @@
 
 /*
- * Principal arquivo de configuração do Terraform
+ * start terraform
  */
 
 terraform {
@@ -12,7 +12,7 @@ terraform {
   }
 }
 
-# Configura o AWS Provider
+# AWS provider
 provider "aws" {
   shared_credentials_file = pathexpand(var.aws_credentials_file_path)
   region = var.aws_region
